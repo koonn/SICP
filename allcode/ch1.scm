@@ -212,7 +212,7 @@
 
 (define (square x) (* x x))
 
-(define (square x) 
+(define (square x)
   (exp (double (log x))))
 
 (define (double x) (+ x x))
@@ -400,7 +400,7 @@
       product
       (expt-iter b
                 (- counter 1)
-                (* b product)))) 
+                (* b product))))
 
 ;; Logarithmic iteration
 (define (fast-expt b n)
@@ -473,7 +473,7 @@
                     m))
         (else
          (remainder (* base (expmod base (- exp 1) m))
-                    m))))        
+                    m))))
 
 (define (fermat-test n)
   (define (try-it a)
@@ -613,7 +613,7 @@
     (+ (* x (square a))
        (* y b)
        (* a b)))
-  (f-helper (+ 1 (* x y)) 
+  (f-helper (+ 1 (* x y))
             (- 1 y)))
 
 (define (f x y)
@@ -800,4 +800,3 @@
 
 ;;EXERCISE 1.43
 ;: ((repeated square 2) 5)
-

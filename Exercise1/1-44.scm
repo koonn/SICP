@@ -1,0 +1,2 @@
+(define (smooth n)
+  ())
